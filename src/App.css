@@ -1,0 +1,308 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #282c34;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 15vmin;
+  pointer-events: none;
+}
+
+
+@media (prefers-reduced-motion : no-preference) {
+  .App-logo {
+    animation: shake infinite 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  }
+}
+
+.App-header {
+  align-items: center;
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes shake {
+
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.green {
+  color: #53a459;
+  border: 1px solid #53a459;
+}
+
+.red-class {
+  color: red;
+  border: 1px solid red;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #61dafb;
+  padding: 20px 60px;
+}
+
+header img {
+  margin-right: 10px;
+}
+
+header p {
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  text-transform: none;
+}
+
+[data-testid="header-score"] {
+  margin-left: 10px;
+}
+
+input {
+  padding: 5px 20px;
+  margin: 10px 0px;
+  width: 260px;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.02);
+  transition: 1s;
+}
+
+.button-login-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.App-logo{
+  margin-bottom: 30px;
+}
+
+[data-testid="btn-settings"] {
+  width: 150px;
+  background-color: #61dafb;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  height: 30px;
+}
+
+[data-testid="btn-play"] {
+  width: 150px;
+  background-color: rgb(173, 238, 187);
+  font-family: sans-serif;
+  text-transform: uppercase;
+  margin-right: 10px;
+  height: 30px;
+}
+
+[data-testid="header-profile-picture"] {
+  border-radius: 50%;
+}
+
+[data-testid="answer-options"] {
+  display: flex;
+  flex-direction: column;
+}
+
+[data-testid="answer-options"] button {
+  width: 600px;
+  padding: 8px 30px;
+  background-color: white;
+  margin: 10px 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+[data-testid="question-category"] {
+  color: #61dafb;
+  font-family: 'Epilogue', sans-serif;
+  margin-left: 50px;
+}
+
+[data-testid="question-text"] {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  margin-left: 50px;
+}
+
+.timer-container {
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+}
+
+.timer-container img {
+  margin-right: 10px;
+}
+
+.timer-container p {
+  font-family: monospace;
+  font-size: 2rem;
+  color: #61fb6b;
+}
+
+.timer {
+  height: 30px;
+}
+
+[data-testid="btn-next"] {
+  background-color: #6fd1ec;
+  color: #282c34;
+  padding: 5px 10px;
+  margin-left: 400px;
+  width: 100px;
+  font-family: sans-serif;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+[data-testid="ranking-title"] {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  margin-left: 50px;
+}
+
+.player-name-ranking{
+  width:250px;
+  text-align:center;
+}
+
+.ranking-item {
+  display: flex;
+  padding: 5px 10px;
+  background-color: white;
+  margin: 5px 300px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ranking-item img {
+  border-radius: 50%;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.ranking-item p {
+  font-family: sans-serif;
+  text-transform: none;
+  font-size: 1.2rem;
+}
+
+.button-ranking-container{
+  text-align: center;
+  margin-top: 30px;
+}
+
+[data-testid="btn-go-home"] {
+  background-color: #61dafb;
+  margin-left: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+  text-align: center;
+  padding: 5px 10px;
+  margin-bottom: 40px;
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+.score-item {
+  background-color: #61dafb;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.feedback-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+[data-testid="feedback-text"] {
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+  color: #61dafb;
+  font-weight: 600;
+  margin: 10px;
+}
+
+[data-testid="feedback-total-score"],
+[data-testid="feedback-total-question"] {
+  color: white;
+  font-size: 2rem;
+  font-family: sans-serif;
+  margin: 10px;
+}
+
+.feedback-container button {
+  width: 300px;
+  padding: 5px 20px;
+  border: none;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+[data-testid="btn-play-again"] {
+  background-color: #98e99d;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
+[data-testid="btn-ranking"] {
+  background-color: #61dafb;
+}
