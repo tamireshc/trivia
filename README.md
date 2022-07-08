@@ -7,5 +7,6 @@ Japhé _[Link Github](https://github.com/cafe51)_<br>
 
 Projeto utilizando  React, Redux e Local Storage.<br> 
 A aplicação salva em estado Local e Global as informações do usuário e sua pontuaçao.<br>
-A proposta do projeto é realizar um jogo de perguntas e respostas utilizando a API do Trivia.
+A proposta do projeto é realizar um jogo de perguntas e respostas utilizando a API do Trivia.<br>
+_[ Link do Deploy ](https://trivia-six-rust.vercel.app/)_<br>
 
